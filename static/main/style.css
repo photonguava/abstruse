@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P";*{font-family:'press start 2p',cursive}
+body,html{
+  overflow:hidden;
+}
+
+a:link{
+  color: cyan;
+}
+a:visited{
+  color: cyan;
+}
+
+.beckground {
+  background: black;
+  padding : 2%;
+  font-family: "Consolas";
+  font-size: 27px;
+  text-align: center;
+}
+
+
+
+
+/* navbar */
+#navbar{
+  width:10vw;
+  position:absolute;
+  top:0px;
+  display:flex;
+  align-items: center;
+  margin:20px;
+  z-index:4;
+  transition-duration: 0.4s;
+}
+#navbar:hover{
+  width:100vw;
+  transition-duration: 0.4s;
+}
+#links{
+  visibility: hidden;
+  transition-duration: 0.4s;
+  margin-left:20px;
+}
+#navbar:hover > #links{
+  visibility: visible;
+  transition-duration: 0.4s;
+}
+#navbar a{
+  margin:auto;
+  padding-left:5px;
+  color:#54fe55;
+  text-decoration: none;
+}
+/* question box */
+#quesbox{
+  position: absolute;
+  top:0px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+  background-color: transparent;
+  z-index:3;
+}
+#qno{
+  margin-bottom:5vh;
+  color:white;
+  text-shadow: 2px 2px #ff0000;
+}
+#ques{
+  color:white;
+  text-shadow: 2px 2px black;
+}
+/* input box  */
+#ansInput{
+  margin-top:15vh;
+  transform: scale(1.2);
+}
+form input{
+  background:#000;border:1px solid #54fe55;margin-top:.5rem;padding:.5rem;color:#54fe55;text-shadow:0 0 10px #54fe55;box-shadow:0 0 5px #54fe55}form input:focus{outline:none}form button{padding:.5rem;background:#1a4f1a;color:#54fe55;border:0;text-shadow:0 0 10px #54fe55;box-shadow:0 0 10px #1a4f1a;cursor:pointer}form button:focus{outline:none
+}
+
+/* glitch effect */
+.p-canvas-webgl {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.p-summary {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Homenaje', sans-serif;
+}
+.p-summary h1 {
+  margin: 0 0 0.2em;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.p-summary p {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+.p-summary a {
+  color: #fff;
+}
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Premium Antivirus!!!</title>
+
+</head>
+
+<style>
+    body{
+        background-color: red;
+    }
+</style>
+<body>
+    <marquee><img src="{{ url_for('static', filename='virus.png') }}" alt="VIRUS DETECTED"></marquee>
+
+    <center><h1>VIRUS DETECTED IN YOUR PC!!</h1></center>
+    <center><h3>UR SYSTAM IS 69% CORRUPTED, ACTIVATE PREMIUM ANTIVIRUS URGENTLY TO RECITFY!!</h3></center>
+    <center><div>
+        <form action="{{url_for('VeryPremiumAntivirus')}}" method='POST'>
+            <label for="productKey">ENTER YOUR PRODUCT KEY</label>
+            <input type="text" name='productKey'>
+            <input type="submit">
+        </form>
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<link rel="icon" type="image/png" sizes="32x32" href="static/ABSTRUSE.png">
+  <meta charset="UTF-8">
+  <title>ABSTRUSE - LEADERBOARD</title>
+  <link rel="stylesheet" href="static/leaderboard/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1><span class="blue">&lt;</span>/Abstruse<span class="blue">&gt;</span> <span class="yellow">Leaderboard</pan></h1>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Name</h1></th>
+			<th><h1>Questions Solved</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for user in user_list%}
+		<tr>
+			<td>{{user.name}}</td>
+			<td>{{user.questions_solved}}</td>
+		</tr>
+		{%endfor%}
+	</tbody>
+</table>
+<!-- partial -->
+  
+</body>
+</html>

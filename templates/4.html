@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="static/ABSTRUSE.png">
+  <meta charset="UTF-8">
+  <title>Abstruse | Sinusoid V4</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main/style.css') }}">
+</head>
+<body>
+  <div id="navbar">
+    <h1>☰</h1>
+    <style>
+    #navbar h1{
+      color:#54fe55;
+      margin-left:20px;
+      transform: scale(1.6);
+    }</style>
+    <div id="links">
+    <a href="#">{{email}}</a>
+    <a target='_blank' href="/leaderboard">LEADERBOARD</a>
+<a href="/faq">F.A.Qs</a>
+    <a href="/logout">LOG OUT</a>
+  </div>
+  </div>
+    <div id="quesbox"><!--question box-->
+        <div id="qno">
+          <h1>QUESTION NO.4</h1>
+        </div>
+        <div id="ques">
+          <a href="{{ url_for('static', filename='oof.wav') }}">invisible.png</a>
+        </div>
+        <form action="/challenges" method="POST" id="ansInput" onsubmit="return validate()"> <!--Answer input box with dummy func. validate()-->
+            <input type="text" name="ans">
+          </form>
+    </div>
+<!-- partial:index.partial.html -->
+<div class="p-summary"></div>
+<canvas class="p-canvas-webgl" id="canvas-webgl">
+</canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+<script  src="{{ url_for('static', filename='main/script.js') }}"></script>
+
+<script>
+  function validate(){
+    document.getElementById("ansInput").submit();
+  }
+</script>
+</body>
+</html>
